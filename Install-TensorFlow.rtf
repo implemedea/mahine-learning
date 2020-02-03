@@ -1,0 +1,399 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue10;\red180\green36\blue25;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c99942\c98555\c0;\cssrgb\c76409\c21698\c12524;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18500\viewh12440\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Mon Feb  3 18:11:25 on ttys000\
+\cb3 Sebastin$ conda create --name tensorflow python=3.6\
+(base) AMB01232:~ Sebastin$ source activate tensorflow\
+(tensorflow) AMB01232:~ Sebastin$ conda install juypter\
+\cb1 Collecting package metadata (current_repodata.json): done\
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.\
+Collecting package metadata (repodata.json): done\
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.\
+\
+PackagesNotFoundError: The following packages are not available from current channels:\
+\
+  - juypter\
+\
+Current channels:\
+\
+  - https://repo.anaconda.com/pkgs/main/osx-64\
+  - https://repo.anaconda.com/pkgs/main/noarch\
+  - https://repo.anaconda.com/pkgs/r/osx-64\
+  - https://repo.anaconda.com/pkgs/r/noarch\
+\
+To search for alternate channels that may provide the conda package you're\
+looking for, navigate to\
+\
+    https://anaconda.org\
+\
+and use the search bar at the top of the page.\
+\
+\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ conda install scipy\
+\cb1 Collecting package metadata (current_repodata.json): done\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/Sebastin/opt/anaconda3/envs/tensorflow\
+\
+  added / updated specs:\
+    - scipy\
+\
+\
+The following packages will be downloaded:\
+\
+    package                    |            build\
+    ---------------------------|-----------------\
+    mkl-service-2.3.0          |   py36hfbe908c_0         202 KB\
+    mkl_fft-1.0.15             |   py36h5e564d8_0         160 KB\
+    mkl_random-1.1.0           |   py36ha771720_0         287 KB\
+    numpy-1.18.1               |   py36h7241aed_0           5 KB\
+    numpy-base-1.18.1          |   py36h6575580_1         3.9 MB\
+    scipy-1.3.2                |   py36h1410ff5_0        12.5 MB\
+    six-1.14.0                 |           py36_0          26 KB\
+    ------------------------------------------------------------\
+                                           Total:        17.1 MB\
+\
+The following NEW packages will be INSTALLED:\
+\
+  blas               pkgs/main/osx-64::blas-1.0-mkl\
+  intel-openmp       pkgs/main/osx-64::intel-openmp-2019.4-233\
+  libgfortran        pkgs/main/osx-64::libgfortran-3.0.1-h93005f0_2\
+  mkl                pkgs/main/osx-64::mkl-2019.4-233\
+  mkl-service        pkgs/main/osx-64::mkl-service-2.3.0-py36hfbe908c_0\
+  mkl_fft            pkgs/main/osx-64::mkl_fft-1.0.15-py36h5e564d8_0\
+  mkl_random         pkgs/main/osx-64::mkl_random-1.1.0-py36ha771720_0\
+  numpy              pkgs/main/osx-64::numpy-1.18.1-py36h7241aed_0\
+  numpy-base         pkgs/main/osx-64::numpy-base-1.18.1-py36h6575580_1\
+  scipy              pkgs/main/osx-64::scipy-1.3.2-py36h1410ff5_0\
+  six                pkgs/main/osx-64::six-1.14.0-py36_0\
+\
+\
+Proceed ([y]/n)? y\
+\
+\
+Downloading and Extracting Packages\
+numpy-1.18.1         | 5 KB      | ##################################### | 100% \
+mkl_random-1.1.0     | 287 KB    | ##################################### | 100% \
+six-1.14.0           | 26 KB     | ##################################### | 100% \
+mkl_fft-1.0.15       | 160 KB    | ##################################### | 100% \
+scipy-1.3.2          | 12.5 MB   | ##################################### | 100% \
+numpy-base-1.18.1    | 3.9 MB    | ##################################### | 100% \
+mkl-service-2.3.0    | 202 KB    | ##################################### | 100% \
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade sklearn\
+\cb1 Processing ./Library/Caches/pip/wheels/76/03/bb/589d421d27431bcd2c6da284d5f2286c8e3b2ea3cf1594c074/sklearn-0.0-py2.py3-none-any.whl\
+Collecting scikit-learn\
+  Downloading scikit_learn-0.22.1-cp36-cp36m-macosx_10_6_intel.whl (11.1 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 11.1 MB 10.1 MB/s \
+Requirement already satisfied, skipping upgrade: numpy>=1.11.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from scikit-learn->sklearn) (1.18.1)\
+Requirement already satisfied, skipping upgrade: scipy>=0.17.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from scikit-learn->sklearn) (1.3.2)\
+Collecting joblib>=0.11\
+  Downloading joblib-0.14.1-py2.py3-none-any.whl (294 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 294 kB 13.2 MB/s \
+Installing collected packages: joblib, scikit-learn, sklearn\
+Successfully installed joblib-0.14.1 scikit-learn-0.22.1 sklearn-0.0\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade pandas\
+\cb1 Collecting pandas\
+  Downloading pandas-1.0.0-cp36-cp36m-macosx_10_9_x86_64.whl (9.9 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 9.9 MB 4.7 MB/s \
+Requirement already satisfied, skipping upgrade: numpy>=1.13.3 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from pandas) (1.18.1)\
+Collecting python-dateutil>=2.6.1\
+  Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 227 kB 12.3 MB/s \
+Collecting pytz>=2017.2\
+  Downloading pytz-2019.3-py2.py3-none-any.whl (509 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 509 kB 13.8 MB/s \
+Requirement already satisfied, skipping upgrade: six>=1.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from python-dateutil>=2.6.1->pandas) (1.14.0)\
+Installing collected packages: python-dateutil, pytz, pandas\
+Successfully installed pandas-1.0.0 python-dateutil-2.8.1 pytz-2019.3\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade pandas-datareader\
+\cb1 Collecting pandas-datareader\
+  Using cached pandas_datareader-0.8.1-py2.py3-none-any.whl (107 kB)\
+Collecting requests>=2.3.0\
+  Downloading requests-2.22.0-py2.py3-none-any.whl (57 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 57 kB 3.1 MB/s \
+Requirement already satisfied, skipping upgrade: pandas>=0.21 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from pandas-datareader) (1.0.0)\
+Collecting lxml\
+  Downloading lxml-4.5.0-cp36-cp36m-macosx_10_9_x86_64.whl (4.6 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 4.6 MB 3.7 MB/s \
+Collecting idna<2.9,>=2.5\
+  Downloading idna-2.8-py2.py3-none-any.whl (58 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 58 kB 11.4 MB/s \
+Collecting chardet<3.1.0,>=3.0.2\
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 133 kB 9.1 MB/s \
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests>=2.3.0->pandas-datareader) (2019.11.28)\
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1\
+  Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 125 kB 10.8 MB/s \
+Requirement already satisfied, skipping upgrade: pytz>=2017.2 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from pandas>=0.21->pandas-datareader) (2019.3)\
+Requirement already satisfied, skipping upgrade: numpy>=1.13.3 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from pandas>=0.21->pandas-datareader) (1.18.1)\
+Requirement already satisfied, skipping upgrade: python-dateutil>=2.6.1 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from pandas>=0.21->pandas-datareader) (2.8.1)\
+Requirement already satisfied, skipping upgrade: six>=1.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from python-dateutil>=2.6.1->pandas>=0.21->pandas-datareader) (1.14.0)\
+Installing collected packages: idna, chardet, urllib3, requests, lxml, pandas-datareader\
+Successfully installed chardet-3.0.4 idna-2.8 lxml-4.5.0 pandas-datareader-0.8.1 requests-2.22.0 urllib3-1.25.8\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade matplotlib\
+\cb1 Collecting matplotlib\
+  Downloading matplotlib-3.1.3-cp36-cp36m-macosx_10_9_x86_64.whl (13.2 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 13.2 MB 7.4 MB/s \
+Requirement already satisfied, skipping upgrade: numpy>=1.11 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from matplotlib) (1.18.1)\
+Collecting kiwisolver>=1.0.1\
+  Downloading kiwisolver-1.1.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (113 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 113 kB 10.8 MB/s \
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1\
+  Downloading pyparsing-2.4.6-py2.py3-none-any.whl (67 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 67 kB 11.4 MB/s \
+Requirement already satisfied, skipping upgrade: python-dateutil>=2.1 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from matplotlib) (2.8.1)\
+Collecting cycler>=0.10\
+  Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)\
+Requirement already satisfied, skipping upgrade: setuptools in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from kiwisolver>=1.0.1->matplotlib) (45.1.0.post20200127)\
+Requirement already satisfied, skipping upgrade: six>=1.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from python-dateutil>=2.1->matplotlib) (1.14.0)\
+Installing collected packages: kiwisolver, pyparsing, cycler, matplotlib\
+Successfully installed cycler-0.10.0 kiwisolver-1.1.0 matplotlib-3.1.3 pyparsing-2.4.6\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pillow\
+\cb1 -bash: pillow: command not found\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade pillow\
+\cb1 Collecting pillow\
+  Downloading Pillow-7.0.0-cp36-cp36m-macosx_10_6_intel.whl (4.0 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 4.0 MB 6.1 MB/s \
+Installing collected packages: pillow\
+Successfully installed pillow-7.0.0\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade requests\
+\cb1 Requirement already up-to-date: requests in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (2.22.0)\
+Requirement already satisfied, skipping upgrade: idna<2.9,>=2.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests) (2.8)\
+Requirement already satisfied, skipping upgrade: chardet<3.1.0,>=3.0.2 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests) (3.0.4)\
+Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests) (1.25.8)\
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests) (2019.11.28)\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade h5py\
+\cb1 Collecting h5py\
+  Downloading h5py-2.10.0-cp36-cp36m-macosx_10_6_intel.whl (3.0 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 3.0 MB 3.1 MB/s \
+Requirement already satisfied, skipping upgrade: six in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from h5py) (1.14.0)\
+Requirement already satisfied, skipping upgrade: numpy>=1.7 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from h5py) (1.18.1)\
+Installing collected packages: h5py\
+Successfully installed h5py-2.10.0\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade pautil\
+\cf4 \cb1 ERROR: Could not find a version that satisfies the requirement pautil (from versions: none)\cf2 \
+\cf4 ERROR: No matching distribution found for pautil\cf2 \
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade tensorflow\
+\cb1 Collecting tensorflow\
+  Downloading tensorflow-2.1.0-cp36-cp36m-macosx_10_11_x86_64.whl (120.8 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 120.8 MB 12.4 MB/s \
+Requirement already satisfied, skipping upgrade: six>=1.12.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from tensorflow) (1.14.0)\
+Collecting tensorboard<2.2.0,>=2.1.0\
+  Using cached tensorboard-2.1.0-py3-none-any.whl (3.8 MB)\
+Collecting tensorflow-estimator<2.2.0,>=2.1.0rc0\
+  Using cached tensorflow_estimator-2.1.0-py2.py3-none-any.whl (448 kB)\
+Collecting wrapt>=1.11.1\
+  Downloading wrapt-1.11.2.tar.gz (27 kB)\
+Requirement already satisfied, skipping upgrade: numpy<2.0,>=1.16.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from tensorflow) (1.18.1)\
+Collecting termcolor>=1.1.0\
+  Using cached termcolor-1.1.0.tar.gz (3.9 kB)\
+Collecting grpcio>=1.8.6\
+  Downloading grpcio-1.26.0-cp36-cp36m-macosx_10_9_x86_64.whl (2.3 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 2.3 MB 9.9 MB/s \
+Collecting absl-py>=0.7.0\
+  Using cached absl-py-0.9.0.tar.gz (104 kB)\
+Collecting keras-preprocessing>=1.1.0\
+  Using cached Keras_Preprocessing-1.1.0-py2.py3-none-any.whl (41 kB)\
+Collecting keras-applications>=1.0.8\
+  Using cached Keras_Applications-1.0.8-py3-none-any.whl (50 kB)\
+Requirement already satisfied, skipping upgrade: wheel>=0.26; python_version >= "3" in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from tensorflow) (0.34.1)\
+Collecting scipy==1.4.1; python_version >= "3"\
+  Downloading scipy-1.4.1-cp36-cp36m-macosx_10_6_intel.whl (28.5 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 28.5 MB 9.4 MB/s \
+Collecting astor>=0.6.0\
+  Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)\
+Collecting gast==0.2.2\
+  Using cached gast-0.2.2.tar.gz (10 kB)\
+Collecting google-pasta>=0.1.6\
+  Using cached google_pasta-0.1.8-py3-none-any.whl (57 kB)\
+Collecting protobuf>=3.8.0\
+  Downloading protobuf-3.11.2-cp36-cp36m-macosx_10_9_x86_64.whl (1.3 MB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 1.3 MB 9.3 MB/s \
+Collecting opt-einsum>=2.3.2\
+  Using cached opt_einsum-3.1.0.tar.gz (69 kB)\
+Collecting google-auth-oauthlib<0.5,>=0.4.1\
+  Using cached google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)\
+Collecting werkzeug>=0.11.15\
+  Downloading Werkzeug-0.16.1-py2.py3-none-any.whl (327 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 327 kB 10.4 MB/s \
+Requirement already satisfied, skipping upgrade: setuptools>=41.0.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from tensorboard<2.2.0,>=2.1.0->tensorflow) (45.1.0.post20200127)\
+Collecting markdown>=2.6.8\
+  Using cached Markdown-3.1.1-py2.py3-none-any.whl (87 kB)\
+Requirement already satisfied, skipping upgrade: requests<3,>=2.21.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from tensorboard<2.2.0,>=2.1.0->tensorflow) (2.22.0)\
+Collecting google-auth<2,>=1.6.3\
+  Using cached google_auth-1.11.0-py2.py3-none-any.whl (76 kB)\
+Requirement already satisfied, skipping upgrade: h5py in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras-applications>=1.0.8->tensorflow) (2.10.0)\
+Collecting requests-oauthlib>=0.7.0\
+  Using cached requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)\
+Requirement already satisfied, skipping upgrade: idna<2.9,>=2.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow) (2.8)\
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow) (2019.11.28)\
+Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow) (1.25.8)\
+Requirement already satisfied, skipping upgrade: chardet<3.1.0,>=3.0.2 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from requests<3,>=2.21.0->tensorboard<2.2.0,>=2.1.0->tensorflow) (3.0.4)\
+Collecting rsa<4.1,>=3.1.4\
+  Using cached rsa-4.0-py2.py3-none-any.whl (38 kB)\
+Collecting pyasn1-modules>=0.2.1\
+  Using cached pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)\
+Collecting cachetools<5.0,>=2.0.0\
+  Using cached cachetools-4.0.0-py3-none-any.whl (10 kB)\
+Collecting oauthlib>=3.0.0\
+  Using cached oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)\
+Collecting pyasn1>=0.1.3\
+  Using cached pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)\
+Building wheels for collected packages: wrapt, termcolor, absl-py, gast, opt-einsum\
+  Building wheel for wrapt (setup.py) ... done\
+  Created wheel for wrapt: filename=wrapt-1.11.2-cp36-cp36m-macosx_10_9_x86_64.whl size=32370 sha256=3da38c7d961c4eaf9ba0079d04a4fcf54f197501c8db6a4b1badee9b3fdad9cc\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/0d/85/48/15d7bfab92a2d0e87372224c1f628fc57db7447a663a58e86c\
+  Building wheel for termcolor (setup.py) ... done\
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=c7745260a19867a6e63683e52b2434dba8829cc83f6d3b1338a10c5626329c2b\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc\
+  Building wheel for absl-py (setup.py) ... done\
+  Created wheel for absl-py: filename=absl_py-0.9.0-py3-none-any.whl size=121932 sha256=8ec708bcf71c7f0dae56a2f0bcfcb99c0ad361a302ef2fa6f7557fdaf8c0d0a0\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/c3/af/84/3962a6af7b4ab336e951b7877dcfb758cf94548bb1771e0679\
+  Building wheel for gast (setup.py) ... done\
+  Created wheel for gast: filename=gast-0.2.2-py3-none-any.whl size=7540 sha256=710896798d932d09b1f30f8d0640c0bff0bca50c55adc94979964035f9494f09\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/19/a7/b9/0740c7a3a7d1d348f04823339274b90de25fbcd217b2ee1fbe\
+  Building wheel for opt-einsum (setup.py) ... done\
+  Created wheel for opt-einsum: filename=opt_einsum-3.1.0-py3-none-any.whl size=61681 sha256=96971e81b23895b3cf83fa877280d5f895c9ae383a6ae359f758398a22fafd71\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/1f/6f/14/e0f4f6bceec756bbab45c392c4d5429a684b14d849464ebfbf\
+Successfully built wrapt termcolor absl-py gast opt-einsum\
+Installing collected packages: oauthlib, requests-oauthlib, pyasn1, rsa, pyasn1-modules, cachetools, google-auth, google-auth-oauthlib, werkzeug, markdown, protobuf, absl-py, grpcio, tensorboard, tensorflow-estimator, wrapt, termcolor, keras-preprocessing, keras-applications, scipy, astor, gast, google-pasta, opt-einsum, tensorflow\
+  Attempting uninstall: scipy\
+    Found existing installation: scipy 1.3.2\
+    Uninstalling scipy-1.3.2:\
+      Successfully uninstalled scipy-1.3.2\
+Successfully installed absl-py-0.9.0 astor-0.8.1 cachetools-4.0.0 gast-0.2.2 google-auth-1.11.0 google-auth-oauthlib-0.4.1 google-pasta-0.1.8 grpcio-1.26.0 keras-applications-1.0.8 keras-preprocessing-1.1.0 markdown-3.1.1 oauthlib-3.1.0 opt-einsum-3.1.0 protobuf-3.11.2 pyasn1-0.4.8 pyasn1-modules-0.2.8 requests-oauthlib-1.3.0 rsa-4.0 scipy-1.4.1 tensorboard-2.1.0 tensorflow-2.1.0 tensorflow-estimator-2.1.0 termcolor-1.1.0 werkzeug-0.16.1 wrapt-1.11.2\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ pip install --upgrade keras\
+\cb1 Collecting keras\
+  Using cached Keras-2.3.1-py2.py3-none-any.whl (377 kB)\
+Requirement already satisfied, skipping upgrade: numpy>=1.9.1 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (1.18.1)\
+Requirement already satisfied, skipping upgrade: keras-applications>=1.0.6 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (1.0.8)\
+Requirement already satisfied, skipping upgrade: h5py in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (2.10.0)\
+Requirement already satisfied, skipping upgrade: six>=1.9.0 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (1.14.0)\
+Requirement already satisfied, skipping upgrade: keras-preprocessing>=1.0.5 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (1.1.0)\
+Requirement already satisfied, skipping upgrade: scipy>=0.14 in ./opt/anaconda3/envs/tensorflow/lib/python3.6/site-packages (from keras) (1.4.1)\
+Collecting pyyaml\
+  Downloading PyYAML-5.3.tar.gz (268 kB)\
+     |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 268 kB 3.1 MB/s \
+Building wheels for collected packages: pyyaml\
+  Building wheel for pyyaml (setup.py) ... done\
+  Created wheel for pyyaml: filename=PyYAML-5.3-cp36-cp36m-macosx_10_9_x86_64.whl size=44233 sha256=628ef78bfbbf30f7c4de805441dffba664354ca865de9202e173e72e2cc23640\
+  Stored in directory: /Users/Sebastin/Library/Caches/pip/wheels/b1/86/0d/10e6c39d3a2b85ba807d7657ee80f08cc16c03f2aa2adf8e46\
+Successfully built pyyaml\
+Installing collected packages: pyyaml, keras\
+Successfully installed keras-2.3.1 pyyaml-5.3\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ python\
+Python 3.6.10 |Anaconda, Inc.| (default, Jan  7 2020, 15:01:53) \
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin\
+Type "help", "copyright", "credits" or "license" for more information.\
+>>> import tensorflow as tf\
+>>> print(tf.__version__)\
+2.1.0\
+>>> quit()\cb1 \
+\cb3 (tensorflow) AMB01232:~ Sebastin$ conda install ipykernel\
+\cb1 \
+Collecting package metadata (current_repodata.json): done\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/Sebastin/opt/anaconda3/envs/tensorflow\
+\
+  added / updated specs:\
+    - ipykernel\
+\
+\
+The following packages will be downloaded:\
+\
+    package                    |            build\
+    ---------------------------|-----------------\
+    appnope-0.1.0              |   py36hf537a9a_0           8 KB\
+    backcall-0.1.0             |           py36_0          20 KB\
+    decorator-4.4.1            |             py_0          13 KB\
+    ipykernel-5.1.4            |   py36h39e3cac_0         172 KB\
+    ipython-7.11.1             |   py36h39e3cac_0         988 KB\
+    ipython_genutils-0.2.0     |           py36_0          40 KB\
+    jedi-0.16.0                |           py36_0         756 KB\
+    jupyter_client-5.3.4       |           py36_0         135 KB\
+    jupyter_core-4.6.1         |           py36_0          74 KB\
+    parso-0.6.0                |             py_0          69 KB\
+    pexpect-4.8.0              |           py36_0          82 KB\
+    pickleshare-0.7.5          |           py36_0          13 KB\
+    prompt_toolkit-3.0.3       |             py_0         242 KB\
+    ptyprocess-0.6.0           |           py36_0          23 KB\
+    pygments-2.5.2             |             py_0         672 KB\
+    python-dateutil-2.8.1      |             py_0         224 KB\
+    pyzmq-18.1.0               |   py36h0a44026_0         401 KB\
+    tornado-6.0.3              |   py36h1de35cc_0         590 KB\
+    traitlets-4.3.3            |           py36_0         137 KB\
+    wcwidth-0.1.7              |           py36_0          26 KB\
+    ------------------------------------------------------------\
+                                           Total:         4.6 MB\
+\
+The following NEW packages will be INSTALLED:\
+\
+  appnope            pkgs/main/osx-64::appnope-0.1.0-py36hf537a9a_0\
+  backcall           pkgs/main/osx-64::backcall-0.1.0-py36_0\
+  decorator          pkgs/main/noarch::decorator-4.4.1-py_0\
+  ipykernel          pkgs/main/osx-64::ipykernel-5.1.4-py36h39e3cac_0\
+  ipython            pkgs/main/osx-64::ipython-7.11.1-py36h39e3cac_0\
+  ipython_genutils   pkgs/main/osx-64::ipython_genutils-0.2.0-py36_0\
+  jedi               pkgs/main/osx-64::jedi-0.16.0-py36_0\
+  jupyter_client     pkgs/main/osx-64::jupyter_client-5.3.4-py36_0\
+  jupyter_core       pkgs/main/osx-64::jupyter_core-4.6.1-py36_0\
+  libsodium          pkgs/main/osx-64::libsodium-1.0.16-h3efe00b_0\
+  parso              pkgs/main/noarch::parso-0.6.0-py_0\
+  pexpect            pkgs/main/osx-64::pexpect-4.8.0-py36_0\
+  pickleshare        pkgs/main/osx-64::pickleshare-0.7.5-py36_0\
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.3-py_0\
+  ptyprocess         pkgs/main/osx-64::ptyprocess-0.6.0-py36_0\
+  pygments           pkgs/main/noarch::pygments-2.5.2-py_0\
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.1-py_0\
+  pyzmq              pkgs/main/osx-64::pyzmq-18.1.0-py36h0a44026_0\
+  tornado            pkgs/main/osx-64::tornado-6.0.3-py36h1de35cc_0\
+  traitlets          pkgs/main/osx-64::traitlets-4.3.3-py36_0\
+  wcwidth            pkgs/main/osx-64::wcwidth-0.1.7-py36_0\
+  zeromq             pkgs/main/osx-64::zeromq-4.3.1-h0a44026_3\
+\
+\
+Proceed ([y]/n)? \
+\
+Downloading and Extracting Packages\
+ptyprocess-0.6.0     | 23 KB     | ############################################################################################################## | 100% \
+prompt_toolkit-3.0.3 | 242 KB    | ############################################################################################################## | 100% \
+parso-0.6.0          | 69 KB     | ############################################################################################################## | 100% \
+ipykernel-5.1.4      | 172 KB    | ############################################################################################################## | 100% \
+python-dateutil-2.8. | 224 KB    | ############################################################################################################## | 100% \
+traitlets-4.3.3      | 137 KB    | ############################################################################################################## | 100% \
+wcwidth-0.1.7        | 26 KB     | ############################################################################################################## | 100% \
+jedi-0.16.0          | 756 KB    | ############################################################################################################## | 100% \
+ipython-7.11.1       | 988 KB    | ############################################################################################################## | 100% \
+pyzmq-18.1.0         | 401 KB    | ############################################################################################################## | 100% \
+pexpect-4.8.0        | 82 KB     | ############################################################################################################## | 100% \
+appnope-0.1.0        | 8 KB      | ############################################################################################################## | 100% \
+ipython_genutils-0.2 | 40 KB     | ############################################################################################################## | 100% \
+jupyter_core-4.6.1   | 74 KB     | ############################################################################################################## | 100% \
+pygments-2.5.2       | 672 KB    | ############################################################################################################## | 100% \
+decorator-4.4.1      | 13 KB     | ############################################################################################################## | 100% \
+backcall-0.1.0       | 20 KB     | ############################################################################################################## | 100% \
+jupyter_client-5.3.4 | 135 KB    | ############################################################################################################## | 100% \
+tornado-6.0.3        | 590 KB    | ############################################################################################################## | 100% \
+pickleshare-0.7.5    | 13 KB     | ############################################################################################################## | 100% \
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+\cb3 (tensorflow) AMB01232:~ Sebastin$ python -m ipykernel install --user --name tensorflow --display-name "Python 3.6 (tensorflow)"\
+\cb1 Installed kernelspec tensorflow in /Users/Sebastin/Library/Jupyter/kernels/tensorflow\
+(tensorflow) AMB01232:~ Sebastin$ \
+}
